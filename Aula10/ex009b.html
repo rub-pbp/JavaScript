@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Fronteira</title>
+</head>
+<body>
+    <h1>Sistema Genitivo </h1>
+    Pais de origem: <input type="string" name = "txtpais" id = "txtpais"> 
+    <input type="button" value="verificar" onclick = "genitivo()">
+    <div id = "resp">
+
+    </div>
+
+    <script>
+        function  genitivo(){ 
+            var txpais=window.document.querySelector('input#txtpais')
+            var resp=window.document.querySelector('div#resp')
+            var pais = (txpais.value)
+            resp.innerHTML = `Seu pais de origem é: <strong> ${pais} '</strong>`
+
+            resp.innerHTML += '<p> seja benvindo </p>'
+
+            if(pais ==  "Brasil" ){
+                resp.innerHTML += '<p>Bem vindo Cidadão<p>'
+            }
+        }   
+    </script>
+    
+</body>
+</html>
+
+    
